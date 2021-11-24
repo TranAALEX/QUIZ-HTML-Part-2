@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wonder World Quiz</title>
+		<link rel="stylesheet" href="stylesheet.css">
+	</head>
+	<body>
+		<div id="main">
+			<center>
+				<h1>Wonder World Quiz</h1>
+				<h3>Created By: Alex Tran</h3>
+			</center>
+			<br>
+			<div id="questions">
+				<div class=question-object id="question-1">
+					<h3>1. Which country is the "Leaning Tower of Pisa" located? (0/1)</h3>
+					<img src="Leaning Tower of Pisa.jfif">
+					<form>
+						<div class="input-object">
+							<input type="radio" id="Romania" name="q1">
+							<label for="Romania">Romania</label>
+						</div>
+						<div class="input-object">
+							<input type="radio" id="Italy" name="q1">
+							<label for="Italy">Italy</label>
+						</div>
+						<div class="input-object">
+							<input type="radio" id="Spain" name="q1">
+							<label for="Spain">Spain</label>
+						</div>
+						<div class="input-object">
+							<input type="radio" id="Greece" name="q1">
+							<label for="Greece">Greece</label>
+						</div>
+					</form>
+				</div>
+				<br>
+				<div class=question-object id="question-2">
+					<h3>2. What is the name of this famous landmark, NOT CASE-SENSITIVE (0/1)</h3>
+					<img src="Statue of Liberty.jfif">
+					<form>
+						<div class="input-object">
+							<input type="text" name="q2">
+						</div>
+					</form>
+				</div>
+				<br>
+				<div class=question-object id="question-3">
+					<h3>3. What is the name of this famous landmark? NOT CASE-SENSITIVE (0/1)</h3>
+					<img src="Eiffel Tower.jfif">
+					<form>
+						<div class="input-object">
+							<input type="text" name="q3">
+						</div>
+					</form>
+				</div>
+				<br>
+				<div class="question-object" id="question-4">
+					<h3>4. Which of the following are famous landmarks? (0/3)</h3>
+					<form>
+						<div class="input-object">
+							<input type="checkbox" id="Taj Mahal" name="q4">
+							<label for="Taj Mahal">Taj Mahal</label>
+						</div>
+						<div class="input-object">
+							<input type="checkbox" id="Pyramid of Giza" name="q4">
+							<label for="Pyramid of Giza">Pyramid of Giza</label>
+						</div>
+						<div class="input-object">
+							<input type="checkbox" id="McDonalds" name="q4">
+							<label for="McDonalds">McDonalds</label>
+						</div>
+						<div class="input-object">
+							<input type="checkbox" id="Kremlin" name="q4">
+							<label for="Kremlin">Kremlin</label>
+						</div>
+					</form>
+				</div>
+				<br>
+				<div class="question-object" id="question-5">
+					<h3>5. Sort the following landmarks from oldest to newest going down. (0/4)</h3>
+					<button type="button" onclick="q5Handler.switchPlaces(event)">Great Wall of China</button><br>
+					<button type="button" onclick="q5Handler.switchPlaces(event)">Moai, Easter Island</button><br>
+					<button type="button" onclick="q5Handler.switchPlaces(event)">Eiffel Tower</button><br>
+					<button type="button" onclick="q5Handler.switchPlaces(event)">Pyramid of Giza</button><br>
+				</div>
+				<div class="question-object" id="question-6">
+					<h3>6. Match the following images to their names. (0/4)</h3>
+					<div id="float-container">
+						<div id="matching-images">
+							a.<img src="Mount Rushmore.jfif" id="a." name="q5" width=272 height=185 onclick="q6Handler.match(event)"><br>
+							b.<img src="Colosseum.jpg" id="b." name="q5" width=272 height=185 onclick="q6Handler.match(event)"><br>
+							c.<img src="Golden Gate Bridge.jfif" id="c." name="q5" width=272 height=185 onclick="q6Handler.match(event)"><br>
+							d.<img src="Great Sphinx of Giza.jfif" id="d." name="q5" width=272 height=185 onclick="q6Handler.match(event)"><br>
+						</div>
+						<div id="matching-buttons">
+							<button type="button" onclick="q6Handler.match(event)">Golden Gate Bridge</button><br>
+							<button type="button" onclick="q6Handler.match(event)">Mount Rushmore</button><br>
+							<button type="button" onclick="q6Handler.match(event)">Colosseum</button><br>
+							<button type="button" onclick="q6Handler.match(event)">Great Sphinx of Giza</button><br>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<center>
+				<button type="button" id = "THE-BIG-SUBMIT-BUTTON" onclick="submit()"><u>SUBMIT</u> (no pressure)</button>
+			</center>
+		</div>
+		<div id="java-scripts">
+			<script src="../JS/score_handler.js"></script>
+			<script src="../JS/question_checker.js"></script>
+			<script src="../JS/question5_handler.js"></script>
+			<script src="../JS/question6_handler.js"></script>
+		</div>
+	</body>
+</html>
